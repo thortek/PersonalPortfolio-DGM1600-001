@@ -7,9 +7,20 @@ html {
   scroll-behavior: smooth;
 }
 
+@media (max-width: 1200px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media (max-width: 900px) {
+  html {
+    font-size: 40%;
+  }
+}
+
 a {
   text-decoration: none;
-  color: #dddddd;
 }
 
 #navbar {
@@ -30,6 +41,7 @@ a {
   display: block;
   padding: 1.5rem;
   font-size: xx-large;
+  color: #dddddd;
 }
 
 .nav-list a:hover {
@@ -37,11 +49,17 @@ a {
 }
 
 #welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #6495ED;
   height: 100vh;
+  font-size: 3rem;
 }
 
 .projects-grid {
+  padding: 4.5rem 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -59,6 +77,48 @@ figcaption {
 }
 
 #contact {
-  height: 20vh;
-  background-color: hsl(0,0,13%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20rem;
+  background-color: #9a8b7c;
 }
+
+#contact h1 {
+  font-size: 4rem;
+  padding: 3rem 0;
+}
+
+#contact p {
+  font-size: xx-large;
+  padding-bottom: 2rem;
+}
+
+#contact div {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 4rem;
+  /* margin-bottom: 5rem; */
+}
+
+#contact div a {
+  margin: 0 2rem;
+  font-size: 2rem;
+  text-shadow: 2px 2px 1px #1f1f1f;
+  transition: transform .1s ease-out;
+  color: #fa3bf0;
+}
+
+#contact div a:hover {
+  transform: translateY(-8px);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  padding: 1rem;
+  background-color: aqua;
+}
+
